@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.20)
 
 message(STATUS "Building SUN")
 
@@ -14,7 +14,7 @@ ENDIF()
 
 IF(CMAKE_BUILD_TYPE MATCHES Debug)
     message(STATUS "Debug mode" )
-    set(wxWidgets_ROOT_DIR C:/wx314_install/Debug)
+    set(wxWidgets_ROOT_DIR "C:/wx314_install/Debug")
     set(wxWidgets_LIB_DIR C:/wx314_install/Debug/lib/vc_x64_lib)
     set(wxWidgets_INCLUDE_DIRS C:/wx314_install/Debug/include)
 ENDIF()
